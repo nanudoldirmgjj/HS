@@ -158,7 +158,7 @@ const hScroll = () => {
     else mode.src = 'styles/dModeLight.png';
 
     hBool = true;
-  }
+
 
 
 
@@ -181,7 +181,7 @@ const hScroll = () => {
     else mode.src = 'styles/nMode.png';
     hBool = false;
   }
-}
+}  }
 
 window.addEventListener('scroll', hScroll);
 
