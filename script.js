@@ -52,7 +52,7 @@ document.onclick = (event) => {
 
 const copy = document.querySelector('.copy');
 
-copy.addEventListener('click', (event) => {
+copy.addEventListener('click', () => {
   const content = copy.previousElementSibling.innerHTML;
   navigator.clipboard.writeText(content);
 })
@@ -158,7 +158,7 @@ const hScroll = () => {
     else mode.src = 'styles/dModeLight.png';
 
     hBool = true;
-  }
+
 
 
 
@@ -181,7 +181,7 @@ const hScroll = () => {
     else mode.src = 'styles/nMode.png';
     hBool = false;
   }
-}
+}  }
 
 window.addEventListener('scroll', hScroll);
 
