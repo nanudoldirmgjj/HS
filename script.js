@@ -96,8 +96,11 @@ function goToNext() {
   
   if (!isAnimating) {
     isAnimating = true;
+    if (window.outerWidth <= 600) {
     if (!counter)  goTo(currentIndex + 2);
-    else goTo(currentIndex + 1)
+    else goTo(currentIndex + 1)      ;
+    }    else goTo(currentIndex + 1)   ;
+
     setTimeout(() => {
       isAnimating = false;
     }, 500);
@@ -270,4 +273,5 @@ function toChangeMode() {
 }
 
 buttonMode.addEventListener('click', toChangeMode)
+
 
