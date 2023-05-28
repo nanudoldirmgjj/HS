@@ -80,6 +80,7 @@ function goTo(index) {
     container.style.transform = `translateX(-${index * 50}%)`;
   currentIndex = index;
 }
+let counter = 0;
 
 function goToPrev() {
   if (!isAnimating) {
@@ -92,13 +93,19 @@ function goToPrev() {
 }
 
 function goToNext() {
+  
   if (!isAnimating) {
     isAnimating = true;
-    goTo(currentIndex + 1);
+    if (window.outerWidth <= 600) {
+    if (!counter)  goTo(currentIndex + 2);
+    else goTo(currentIndex + 1)      ;
+    }    else goTo(currentIndex + 1)   ;
+
     setTimeout(() => {
       isAnimating = false;
     }, 500);
   }
+  counter++;
 }
 
 prevBtn.addEventListener('click', goToPrev);
