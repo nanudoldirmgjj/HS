@@ -274,3 +274,4 @@ function toChangeMode() {
 
 buttonMode.addEventListener('click', toChangeMode)
 
+
