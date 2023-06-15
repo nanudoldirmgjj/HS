@@ -834,7 +834,7 @@ footer {
 
 @media (max-width: 600px) {
     .modal-container {
-        width: 55%;
+        width: 90%;
     }
 
     #headerContainer {
