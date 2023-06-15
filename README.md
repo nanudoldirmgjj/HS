@@ -1,2 +1,1 @@
-# Hummus Shop
-https://nanudoldirmgjj.github.io/HS/
+# [Hummus Shop](https://www.captainsbbq.com/menus/)
